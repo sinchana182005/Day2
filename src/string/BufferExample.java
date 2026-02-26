@@ -1,4 +1,31 @@
 package string;
 
 public class BufferExample {
+    public void stringInsert() {
+        StringBuffer buffer = new StringBuffer("JA");
+        System.out.println("Old string:" + buffer);
+        buffer.insert(1, "AV");
+        System.out.println("New String:" + buffer);
+    }
+
+    public void stringAppend() {
+        StringBuffer buffer = new StringBuffer("SNPSU");
+        System.out.println("Old string:" + buffer);
+        buffer.append("ISE");
+        System.out.println("New String:" + buffer);
+    }
+
+    public void stringReverse() {
+
+        StringBuffer buffer = new StringBuffer("HOHTYP");
+        System.out.println("Old string:" + buffer);
+        buffer.reverse();
+        System.out.println("New String:" + buffer);
+    }
+
+    public static void main(String[] args) {
+        new BufferExample().stringInsert();
+        new BufferExample().stringAppend();
+        new BufferExample().stringReverse();
+    }
 }
